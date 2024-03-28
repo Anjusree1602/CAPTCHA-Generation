@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CAPTCHA Verification</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <h1>Text CAPTCHA Verification</h1>
+    <p>Please enter the CAPTCHA text shown below:</p>
+    <p><strong id="captcha-text">{{ captcha_text }}</strong></p>
+    <form id="captcha-form">
+        <input type="text" name="captcha_input" required>
+        <input type="submit" value="Verify">
+    </form>
+    <button type="button" id="regenerate-button">Regenerate</button>
+    <div class="message" id="message"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>
